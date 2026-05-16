@@ -1,32 +1,130 @@
-<<<<<<< HEAD
-# Donation
+# Cloth Charity Angular TypeScript
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+A full-stack cloth donation and charity management web application built using Angular, TypeScript, Node.js, Express.js, and MongoDB. This platform helps users donate clothes online, track donation requests, and manage charity operations efficiently.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+### User Module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* User Registration & Login
+* Donate Clothes Online
+* Track Donation Status
+* Donation History
+* Update User Profile
 
-## Build
+### Admin Module
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Manage Donation Requests
+* Accept or Reject Donations
+* Assign Volunteers
+* Manage Delivery Status
 
-## Running unit tests
+### Contact Module
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* User Contact & Support Form
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies Used
 
-## Further help
+### Frontend
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Cloth_Charity_Angular_TypeScript
-A full-stack cloth donation and charity management web application built with Angular and TypeScript where users can donate clothes, track donation status, and request help. Admins can manage donations, assign volunteers city-wise, accept requests, and monitor delivery status through an interactive dashboard.
->>>>>>> 2a721bf7bc4c2bbc64ed5acd9846d74de8738888
+* Angular
+* TypeScript
+* HTML5
+* CSS3
+* Bootstrap
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB
+
+---
+
+## Project Structure
+
+```bash id="x8m4n2"
+donation/
+│
+├── src/                    # Angular Frontend
+├── nodeserver/             # Node.js Backend
+├── database/               # MongoDB Exported Collections
+├── package.json
+└── angular.json
+```
+
+---
+
+## MongoDB Collections
+
+* user
+* donation
+* receiver
+* volunteer
+* contact
+
+---
+
+## Installation
+
+### Frontend Setup
+
+```bash id="g5k2v8"
+npm install
+ng serve
+```
+
+Frontend runs on:
+
+```text id="u3p7m1"
+http://localhost:4200
+```
+
+---
+
+### Backend Setup
+
+```bash id="c9r4x2"
+cd nodeserver
+npm install
+node myserver1.js
+```
+
+---
+
+### MongoDB Setup
+
+1. Install MongoDB Compass
+2. Create Database:
+
+```text id="m1q8p5"
+clothdb
+```
+
+3. Import JSON collections from the `database` folder
+4. Update MongoDB connection URL if needed
+
+---
+
+## Future Improvements
+
+* Email Notifications
+* Real-time Donation Tracking
+* Payment Gateway Integration
+* Admin Analytics Dashboard
+* Mobile Responsive UI
+
+---
+
+## Author
+
+Shubham Shah
+
+---
