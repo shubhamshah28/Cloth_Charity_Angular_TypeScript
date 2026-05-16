@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Donation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Cloth_Charity_Angular_TypeScript
+A full-stack cloth donation and charity management web application built with Angular and TypeScript where users can donate clothes, track donation status, and request help. Admins can manage donations, assign volunteers city-wise, accept requests, and monitor delivery status through an interactive dashboard.
+>>>>>>> 2a721bf7bc4c2bbc64ed5acd9846d74de8738888
