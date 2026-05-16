@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "69b392a00f666699f4610bbd"
+  },
+  "deliveryType": "Orphanage",
+  "receiverName": "raju",
+  "receiverContact": "7858592411",
+  "location": "nvs",
+  "deliveryDate": "2026-03-27",
+  "deliveredBy": "admin",
+  "remarks": "ok\n",
+  "deliveryId": "69b391c10f666699f4610bbb",
+  "createdAt": {
+    "$date": "2026-03-13T04:29:20.258Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b3b7cdeb4a4ba1f22b4d3f"
+  },
+  "deliveryType": "NGO",
+  "receiverName": "yash",
+  "receiverContact": "123456890",
+  "location": "nvs",
+  "deliveryDate": "2026-03-26",
+  "deliveredBy": "utsav",
+  "remarks": "ok\n",
+  "deliveryId": "69b391d70f666699f4610bbc",
+  "createdAt": {
+    "$date": "2026-03-13T07:07:57.109Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69dc8e725f8cce284718adf4"
+  },
+  "deliveryType": "NGO",
+  "receiverName": "utsav",
+  "receiverContact": "",
+  "location": "navsari",
+  "deliveryDate": "2026-04-30",
+  "deliveredBy": "jaydip",
+  "remarks": "nvs",
+  "deliveryId": "69dc8d8e5f8cce284718adf3",
+  "createdAt": {
+    "$date": "2026-04-13T06:34:26.111Z"
+  }
+}]

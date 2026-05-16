@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "69b26bbe3415e7eb617ab075"
+  },
+  "fullName": "admin",
+  "email": "admin123@gmail.com",
+  "contact": "9999999999",
+  "password": "123",
+  "state": "Gujarat",
+  "city": "Navsari",
+  "address": "Admin Office"
+},
+{
+  "_id": {
+    "$oid": "69b26c29cbe08821412e7a9e"
+  },
+  "fullName": "Shubham S Shah",
+  "email": "shubham@gmail.com",
+  "contact": "9911223344",
+  "password": "123456",
+  "state": "Gujarat",
+  "city": "Navsari",
+  "address": "maneklal road"
+},
+{
+  "_id": {
+    "$oid": "69b26f8b0e87072aec65b620"
+  },
+  "fullName": "Roshni Shah",
+  "email": "roshni@gmail.com",
+  "contact": "1234567890",
+  "password": "123456",
+  "state": "Gujarat",
+  "city": "Navsari",
+  "address": "nvs"
+},
+{
+  "_id": {
+    "$oid": "69dc876f5f8cce284718adf1"
+  },
+  "fullName": "Utsav",
+  "email": "utsav@gmail.com",
+  "contact": "9852866335",
+  "password": "Utsav@123",
+  "state": "Gujarat",
+  "city": "Surat",
+  "address": "Station road"
+}]

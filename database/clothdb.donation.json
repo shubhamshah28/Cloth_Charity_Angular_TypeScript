@@ -1,0 +1,95 @@
+[{
+  "_id": {
+    "$oid": "69b391c10f666699f4610bbb"
+  },
+  "clothType": "Men",
+  "category": "Shirt",
+  "quantity": "65",
+  "condition": "New",
+  "purpose": "ok",
+  "userid": "69b26f8b0e87072aec65b620",
+  "username": "Roshni Shah",
+  "city": "Navsari",
+  "status": "Accepted",
+  "collectionDate": "2026-03-16",
+  "delivered": "yes",
+  "volunteer": "Nisi Shah",
+  "volunteer_contact": "1122334455",
+  "volunteer_email": "nisishah1112@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "69b391d70f666699f4610bbc"
+  },
+  "clothType": "Men",
+  "category": "Tshirt",
+  "quantity": "65",
+  "condition": "New",
+  "purpose": "okk",
+  "userid": "69b26f8b0e87072aec65b620",
+  "username": "Roshni Shah",
+  "city": "Navsari",
+  "status": "Accepted",
+  "collectionDate": "2026-03-16",
+  "delivered": "yes",
+  "volunteer": "Nisi Shah",
+  "volunteer_contact": "1122334455",
+  "volunteer_email": "nisishah1112@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "69b3b733eb4a4ba1f22b4d3e"
+  },
+  "clothType": "Women",
+  "category": "Shirt",
+  "quantity": "78",
+  "condition": "New",
+  "purpose": "ok",
+  "userid": "69b26c29cbe08821412e7a9e",
+  "username": "Shubham S Shah",
+  "city": "Navsari",
+  "status": "Accepted",
+  "collectionDate": "2026-03-11",
+  "delivered": "no",
+  "volunteer": "Nisi Shah",
+  "volunteer_contact": "1122334455",
+  "volunteer_email": "nisishah1112@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "69dc87a75f8cce284718adf2"
+  },
+  "clothType": "Women",
+  "category": "Pant",
+  "quantity": "77",
+  "condition": "New",
+  "purpose": "birthday",
+  "userid": "69dc876f5f8cce284718adf1",
+  "username": "Utsav",
+  "city": "Surat",
+  "status": "Accepted",
+  "collectionDate": "2026-03-25",
+  "delivered": "no",
+  "volunteer": "Jaydip",
+  "volunteer_contact": "9484499553",
+  "volunteer_email": "jaydip@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "69dc8d8e5f8cce284718adf3"
+  },
+  "clothType": "Men",
+  "category": "Shirt",
+  "quantity": "33",
+  "condition": "New",
+  "purpose": "good",
+  "userid": "69b26c29cbe08821412e7a9e",
+  "username": "Shubham S Shah",
+  "city": "Navsari",
+  "status": "Accepted",
+  "collectionDate": "2026-04-14",
+  "delivered": "yes",
+  "volunteer": "Nisi Shah",
+  "volunteer_contact": "1122334455",
+  "volunteer_email": "nisishah1112@gmail.com"
+}]
