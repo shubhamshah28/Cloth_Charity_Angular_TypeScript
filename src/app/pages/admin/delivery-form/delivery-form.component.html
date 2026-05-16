@@ -1,0 +1,81 @@
+<div class="profile-wrapper">
+
+  <div class="profile-card">
+
+    <h2 class="title">Donation Delivery Form</h2>
+
+    <form #frm="ngForm" (ngSubmit)="submitDelivery(frm.value)">
+
+      <div class="profile-grid">
+
+        <!-- Delivery For -->
+        <div class="form-group">
+          <label>Delivery For</label>
+          <select class="form-control" name="deliveryType" ngModel required>
+            <option value="">Select</option>
+            <option>Poor People</option>
+            <option>Weak Area</option>
+            <option>Orphanage</option>
+            <option>NGO</option>
+          </select>
+        </div>
+
+        <!-- Receiver Name -->
+        <div class="form-group">
+          <label>Receiver Name</label>
+          <input class="form-control" name="receiverName" ngModel required>
+        </div>
+
+        <!-- Receiver Contact -->
+        <div class="form-group">
+          <label>Receiver Contact</label>
+          <input class="form-control" name="receiverContact" ngModel required>
+        </div>
+
+        <!-- Delivery Location -->
+        <div class="form-group">
+          <label>Delivery Location</label>
+          <input class="form-control" name="location" ngModel required>
+        </div>
+
+        <!-- Delivery Date -->
+        <div class="form-group">
+          <label>Delivery Date</label>
+          <input type="date" class="form-control" name="deliveryDate" ngModel required>
+        </div>
+
+
+        <!-- Delivered By -->
+        <div class="form-group">
+          <label>Delivered By</label>
+          <input class="form-control" name="deliveredBy" ngModel>
+        </div>
+
+        <!-- Remarks -->
+        <div class="form-group full">
+          <label>Remarks</label>
+          <textarea rows="3" class="form-control" name="remarks" ngModel></textarea>
+        </div>
+
+      </div>
+
+      <div class="btn-box">
+
+        <button class="btn-submit">
+          Submit Delivery
+        </button>
+
+        <button
+          type="button"
+          class="btn-cancel"
+          routerLink="/donation_delivery">
+          Cancel
+        </button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>

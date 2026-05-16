@@ -1,0 +1,14 @@
+<section class="volunteer-hero">
+  <h1>Our Volunteers</h1>
+  <p>Meet the people who make every donation reach those who need it most.</p>
+</section>
+
+<section class="volunteer-list">
+  
+  <div class="grid">
+    <div class="vol-card" *ngFor="let v of volunteers">
+      <img [src]="v.img" [alt]="v.name">
+      <h3>{{ v.name }}</h3>
+    </div>
+  </div>
+</section>

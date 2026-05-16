@@ -1,0 +1,48 @@
+<div class="manage-users-wrapper">
+  <div class="container">
+    <div class="card custom-card">
+      
+      <div class="card-header custom-header">
+        <h3>Registered Users</h3>
+      </div>
+
+      <div class="card-body table-responsive">
+        <table class="table custom-table">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+              
+              <th>State</th>
+              <th>City</th>
+              <th>Address</th>
+              
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let i of data" [hidden]="i.fullName === 'admin'">
+              <td>{{ i.fullName }}</td>
+              <td>{{ i.email }}</td>
+              <td>{{ i.contact }}</td>
+              <td>{{ i.state }}</td>
+              <td>{{ i.city }}</td>
+              <td>{{ i.address }}</td>
+              <td class="action-buttons">
+                <button class="btn-delete" (click)="rowdelete(i._id)">
+                  Delete
+                </button>
+                <button class="btn-update" (click)="rowsearch(i._id)">
+                  Update
+                </button>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

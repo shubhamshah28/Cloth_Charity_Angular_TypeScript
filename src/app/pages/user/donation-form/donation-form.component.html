@@ -1,0 +1,73 @@
+<div class="donation-wrapper">
+
+<div class="donation-card">
+
+<h2 class="title">Cloth Donation Form</h2>
+
+<form #frm="ngForm" (ngSubmit)="submitDonation(frm.value, frm)">
+
+<div class="form-grid">
+
+<!-- Cloth Type -->
+<div>
+<label>Cloth Type</label>
+<select name="clothType" ngModel class="form-control" required>
+<option value="">Select</option>
+<option>Men</option>
+<option>Women</option>
+<option>Kids</option>
+</select>
+</div>
+
+<!-- Cloth Category -->
+<div>
+<label>Cloth Category</label>
+<select name="category" ngModel class="form-control" required>
+<option value="">Select</option>
+<option>Shirt</option>
+<option>Jacket</option>
+<option>Pant</option>
+<option>Tshirt</option>
+</select>
+</div>
+
+<!-- Quantity -->
+<div>
+<label>Quantity</label>
+<input type="text" name="quantity" ngModel class="form-control" required>
+</div>
+
+<!-- Condition -->
+<div>
+<label>Condition</label>
+<select name="condition" ngModel class="form-control" required>
+<option value="">Select</option>
+<option>New</option>
+<option>Good</option>
+<option>Used</option>
+</select>
+</div>
+
+<!-- Purpose -->
+<div class="full">
+<label>Purpose</label>
+<textarea name="purpose" ngModel class="form-control" required></textarea>
+</div>
+
+</div>
+
+<!-- Success Message -->
+<div *ngIf="successMsg" class="alert alert-success text-center mt-3">
+{{successMsg}}
+</div>
+
+<div class="btn-box">
+<button type="submit" class="btn-submit">Submit Donation</button>
+<button type="reset" class="btn-cancel">Cancel</button>
+</div>
+
+</form>
+
+</div>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="manage-users-wrapper">
+
+    <div class="container">
+        <div class="card custom-card">
+            <div class="card-header custom-header">
+                <h3>Contact Messages</h3>
+            </div>
+
+            <div class="card-body table-responsive">
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Message</th> 
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let m of messages">
+                            <td>{{m.date | date:'medium'}}</td>
+                            <td>{{m.name}}</td>
+                            <td>{{m.email}}</td>
+                            <td>{{m.message}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="layout">
+
+    <aside class="sidebar" [class.hide]="!sidebarOpen">
+        <!-- Toggle Button inside sidebar -->
+        <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+        <br><br><br>
+        <nav>
+            <!-- Admin Menu -->
+            <div *ngIf="role === 'admin'">
+
+                <a routerLink="/admin_home">Dashboard</a>
+
+                <a routerLink="/manage_users">Manage Users</a>
+
+                <a routerLink="/manage_volunteer">Manage Volunteers</a>
+
+                <!-- Donation Management Dropdown -->
+
+                <div class="dropdown">
+
+                    <span class="dropdown-title">Donation Management ▾</span>
+
+                    <div class="dropdown-content">
+
+                        <a routerLink="/new_donation">New Donation</a>
+
+                        <a routerLink="/donation_delivery">Donation Delivery</a>
+
+                        <a routerLink="/donation_delivered">Donation Delivered</a>
+
+                    </div>
+
+                </div>
+
+                <a routerLink="/contact_messages">Contact Messages</a>
+
+            </div>
+
+            <!-- User Menu -->
+            <div *ngIf="role === 'user'">
+                <a routerLink="/donor_home">Dashboard</a>
+                <a routerLink="/donation_form">Donation Form</a>
+                <a routerLink="/donation_history">Donation History</a>
+                <a routerLink="/donor_profile">My Profile</a>
+            </div>
+
+            <a (click)="logout()">Logout</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <app-header></app-header>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+        <app-footer></app-footer>
+    </div>
+</div>

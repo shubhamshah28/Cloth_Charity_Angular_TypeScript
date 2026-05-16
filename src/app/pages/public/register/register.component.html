@@ -1,0 +1,128 @@
+<section class="register-hero text-center py-4 bg-light">
+  <h1>Register</h1>
+  <p>Join Cloth Charity as a donor or volunteer and make a difference.</p>
+</section>
+
+<section class="register-form d-flex justify-content-center my-4">
+
+  <form #regForm="ngForm" (ngSubmit)="regSubmit(regForm.value, regForm)" class="p-4 shadow rounded bg-white w-75">
+
+    <h2 class="mb-3 text-center">Create Your Account</h2>
+
+    <!-- Full Name -->
+    <div class="mb-3">
+
+      <input type="text" class="form-control" placeholder="Full Name" name="fullName" ngModel required
+        #fullName="ngModel">
+
+      <div class="text-danger" *ngIf="fullName.invalid && fullName.touched">
+        Full name is required
+      </div>
+
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+
+      <input type="email" class="form-control" placeholder="Email Address" name="email" ngModel required email
+        #email="ngModel">
+
+      <div class="text-danger" *ngIf="email.invalid && email.touched">
+        Enter a valid email
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="mb-3">
+
+      <input type="tel" class="form-control" placeholder="Contact Number" name="contact" ngModel required
+        pattern="[0-9]{10}" #contact="ngModel">
+
+      <div class="text-danger" *ngIf="contact.invalid && contact.touched">
+        Enter valid 10 digit contact number
+      </div>
+
+    </div>
+
+    <!-- Password -->
+    <div class="mb-3">
+
+      <input type="password" class="form-control" placeholder="Password" name="password" ngModel required minlength="6"
+        #password="ngModel">
+
+      <div class="text-danger" *ngIf="password.invalid && password.touched">
+        Password must be at least 6 characters
+      </div>
+
+    </div>
+
+    <!-- State -->
+    <div class="mb-3">
+
+      <input class="form-control" name="state" [(ngModel)]="state" readonly>
+
+    </div>
+
+    <!-- City -->
+    <div class="mb-3">
+
+      <select class="form-control" name="city" ngModel required #city="ngModel">
+
+        <option value="">Select City</option>
+
+        <option *ngFor="let c of cities" [value]="c.city">
+          {{c.city}}
+        </option>
+
+      </select>
+
+      <div class="text-danger" *ngIf="city.invalid && city.touched">
+        Please select city
+      </div>
+
+    </div>
+
+    <!-- Address -->
+    <div class="mb-3">
+
+      <textarea class="form-control" rows="3" placeholder="Enter Address" name="address" ngModel required
+        #address="ngModel">
+
+</textarea>
+
+      <div class="text-danger" *ngIf="address.invalid && address.touched">
+        Address is required
+      </div>
+
+    </div>
+
+    <!-- Success Message -->
+    <div class="alert alert-success text-center" *ngIf="successMsg">
+      {{successMsg}}
+    </div>
+
+    <!-- Error Message -->
+    <div class="alert alert-danger text-center" *ngIf="errorMsg">
+      {{errorMsg}}
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100" [disabled]="regForm.invalid">
+
+      Register
+
+    </button>
+
+    <div class="text-center mt-3">
+
+      Already have an account?
+
+      <a routerLink="/login">
+        Sign In
+      </a>
+
+    </div>
+
+  </form>
+
+</section>

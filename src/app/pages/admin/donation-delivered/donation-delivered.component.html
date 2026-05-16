@@ -1,0 +1,51 @@
+<div class="manage-users-wrapper">
+
+  <div class="container">
+
+    <div class="card custom-card">
+
+      <div class="card-header custom-header">
+        <h3>Donation Delivery Records</h3>
+      </div>
+
+      <div class="card-body table-responsive">
+
+        <table class="table custom-table">
+
+          <thead>
+            <tr>
+              <th>Delivery Type</th>
+              <th>Receiver Name</th>
+              <th>Receiver Contact</th>
+              <th>Location</th>
+              <th>Delivery Date</th>
+              <th>Delivered By</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let d of data">
+
+              <td>{{d.deliveryType}}</td>
+              <td>{{d.receiverName}}</td>
+              <td>{{d.receiverContact}}</td>
+              <td>{{d.location}}</td>
+              <td>{{d.deliveryDate}}</td>
+              <td>{{d.deliveredBy}}</td>
+              <td>{{d.remarks}}</td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,61 @@
+.contact-hero {
+  text-align: center;
+  padding: 20px 20px;
+  background: linear-gradient(135deg, #ff6f61, #e85c50);
+  color: #fff;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;     /* dono ko center me rakho */
+  align-items: flex-start;     /* top se align karne ke liye */
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info{
+  flex: 1;
+  max-width: 350px;            /* dono ka max width similar */
+}
+
+
+.contact-form {
+  flex: 1;                   /* form thoda bada */
+  max-width: 350px;          /* limit width */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;          /* input box chhota */
+  font-size: 0.9rem;      /* text size thoda kam */
+}
+
+.btn-primary {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e85c50;
+  transform: scale(1.05);
+}

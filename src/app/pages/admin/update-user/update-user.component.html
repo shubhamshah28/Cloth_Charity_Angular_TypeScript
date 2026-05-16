@@ -1,0 +1,80 @@
+<div class="update-wrapper">
+
+<div class="update-card">
+
+<h2 class="title">User Update Form</h2>
+
+<form #regForm="ngForm" (ngSubmit)="regSubmit(regForm.value)">
+
+<div class="form-grid">
+
+<!-- Full Name -->
+<div class="form-group">
+<label>Full Name</label>
+<input [(ngModel)]="data[0].fullName" name="fullName" class="form-control">
+</div>
+
+
+<!-- Contact -->
+<div class="form-group">
+<label>Contact</label>
+<input [(ngModel)]="data[0].contact" name="contact" class="form-control">
+</div>
+
+<!-- Email -->
+<div class="form-group">
+<label>Email</label>
+<input [(ngModel)]="data[0].email" name="email" class="form-control">
+</div>
+
+<!-- State -->
+<div class="form-group">
+<label>State</label>
+<input 
+[(ngModel)]="data[0].state"
+name="state"
+class="form-control"
+value="Gujarat"
+readonly>
+</div>
+
+<!-- City -->
+<div class="form-group" *ngIf="cities.length > 0">
+<label>City</label>
+
+<select
+class="form-control"
+[(ngModel)]="data[0].city"
+name="city">
+
+<option value="">Select City</option>
+
+<option *ngFor="let c of cities" [value]="c.city">
+{{c.city}}
+</option>
+
+</select>
+
+</div>
+
+<!-- Address (same row as Birthdate) -->
+<div class="form-group">
+<label>Address</label>
+<textarea [(ngModel)]="data[0].address" name="address" rows="2" class="form-control"></textarea>
+</div>
+
+</div>
+
+<div class="btn-box">
+<button class="btn-submit">Submit</button>
+
+<button type="button" class="btn-cancel" routerLink="/manage_users">
+Cancel
+</button>
+
+</div>
+
+</form>
+
+</div>
+</div>

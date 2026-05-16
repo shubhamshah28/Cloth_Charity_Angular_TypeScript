@@ -1,0 +1,92 @@
+<div class="dashboard">
+
+<h2 class="title">Admin Dashboard</h2>
+
+<!-- Stats Cards -->
+<div class="cards">
+
+<div class="card blue">
+<h3>Total Users</h3>
+<p>{{stats.users - 1}}</p>
+<a [routerLink]="['/manage_users']" class="view-btn">View Details >></a>
+</div>
+
+<div class="card green">
+<h3>Total Donations</h3>
+<p>{{stats.total}}</p>
+<a [routerLink]="['/manage_users']" class="view-btn">View Details >></a>
+</div>
+
+<div class="card orange">
+<h3>Pending Donations</h3>
+<p>{{stats.pending}}</p>
+<a [routerLink]="['/new_donation']" class="view-btn">View Details >></a>
+</div>
+
+<div class="card purple">
+<h3>Accepted Donations</h3>
+<p>{{stats.accepted}}</p>
+<a [routerLink]="['/donation_delivery']" class="view-btn">View Details >></a>
+</div>
+
+<div class="card red">
+<h3>Rejected Donations</h3>
+<p>{{stats.rejected}}</p>
+<a [routerLink]="['/new_donation']" class="view-btn">View Details >></a>
+</div>
+
+<div class="card dark">
+<h3>Total Volunteers</h3>
+<p>{{stats.volunteers}}</p>
+<a [routerLink]="['/manage_volunteer']" class="view-btn">View Details >></a>
+</div>
+
+</div>
+
+
+<!-- Recent Donations -->
+
+<div class="recent">
+
+<h3>Recent Donations</h3>
+
+<table class="table">
+
+<thead>
+<tr>
+<th>User</th>
+<th>City</th>
+<th>Cloth</th>
+<th>Quantity</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr *ngFor="let d of recent">
+
+<td>{{d.username}}</td>
+<td>{{d.city}}</td>
+<td>{{d.clothType}}</td>
+<td>{{d.quantity}}</td>
+
+<td>
+
+<span *ngIf="d.status=='Pending'" class="pending">Pending</span>
+
+<span *ngIf="d.status=='Accepted'" class="accepted">Accepted</span>
+
+<span *ngIf="d.status=='Rejected'" class="rejected">Rejected</span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>

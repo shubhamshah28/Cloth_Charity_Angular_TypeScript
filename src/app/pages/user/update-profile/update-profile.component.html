@@ -1,0 +1,81 @@
+<div class="profile-wrapper" *ngIf="data.length > 0">
+
+<div class="profile-card">
+
+<h2 class="title">Update Profile</h2>
+
+<form #frm="ngForm" (ngSubmit)="updateProfile(frm.value)">
+
+<div class="profile-grid">
+
+<!-- Full Name -->
+<div class="form-group">
+<label>Full Name</label>
+<input [(ngModel)]="data[0].fullName" name="fullName" class="form-control">
+</div>
+
+<!-- Email -->
+<div class="form-group">
+<label>Email</label>
+<input [(ngModel)]="data[0].email" name="email" class="form-control">
+</div>
+
+<!-- Contact -->
+<div class="form-group">
+<label>Contact</label>
+<input [(ngModel)]="data[0].contact" name="contact" class="form-control">
+</div>
+
+
+
+<!-- State -->
+<div class="form-group">
+<label>State</label>
+<input [(ngModel)]="data[0].state" name="state" class="form-control" readonly>
+</div>
+
+<!-- City Dropdown -->
+<div class="form-group" *ngIf="cities.length > 0">
+<label>City</label>
+
+<select
+class="form-control"
+[(ngModel)]="data[0].city"
+name="city">
+
+<option value="">Select City</option>
+
+<option *ngFor="let c of cities" [value]="c.city">
+{{c.city}}
+</option>
+
+</select>
+
+</div>
+
+
+<!-- Address -->
+<div class="form-group">
+<label>Address</label>
+<textarea [(ngModel)]="data[0].address" name="address" rows="3" class="form-control"></textarea>
+</div>
+
+</div>
+
+<div class="btn-box">
+
+<button class="btn-submit">
+Update
+</button>
+
+<button type="button" class="btn-cancel" routerLink="/donor_profile">
+Cancel
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>

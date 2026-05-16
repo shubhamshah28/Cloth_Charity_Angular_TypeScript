@@ -1,0 +1,83 @@
+<div class="table-wrapper">
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>Donor Name</th>
+        <th>Cloth Type</th>
+        <th>Category</th>
+        <th>City</th>
+        <th>Quantity</th>
+        <th>Status</th>
+        <th>Volunteer</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Collection Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let d of data" [hidden]="d.status!='Pending'">
+
+        <td>{{d.username}}</td>
+        <td>{{d.clothType}}</td>
+        <td>{{d.category}}</td>
+        <td>{{d.city}}</td>
+        <td>{{d.quantity}}</td>
+        <td>{{d.status}}</td>
+
+        <!-- Volunteer Dropdown -->
+        <td>
+
+          <select class="form-control" [(ngModel)]="d.volunteer" (change)="setVolunteerDetails(d)">
+
+            <option value="">Select Volunteer</option>
+
+            <option *ngFor="let v of volunteers" [value]="v.volunteer_name" [hidden]="v.city != d.city">
+
+              {{v.volunteer_name}}
+
+            </option>
+
+          </select>
+
+        </td>
+
+        <!-- Volunteer Email -->
+        <td>
+          <input type="text" class="form-control" [(ngModel)]="d.volunteer_email" readonly>
+        </td>
+
+        <!-- Volunteer Contact -->
+        <td>
+          <input type="text" class="form-control" [(ngModel)]="d.volunteer_contact" readonly>
+        </td>
+
+        <!-- Collection Date -->
+        <td>
+          <input type="date" class="form-control" [(ngModel)]="d.collectionDate">
+        </td>
+
+        <!-- Action -->
+        <td>
+
+          <button class="btn-accept" (click)="acceptDonation(d)">
+            Accept
+          </button>
+          <br><br>
+          <button class="btn-reject" (click)="updateStatus(d._id,'Rejected')">
+            Reject
+          </button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

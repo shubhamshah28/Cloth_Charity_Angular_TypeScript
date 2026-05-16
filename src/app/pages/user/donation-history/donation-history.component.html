@@ -1,0 +1,74 @@
+<div class="donation-wrapper">
+
+<div class="donation-card">
+
+<h2 class="title">My Donation History</h2>
+
+<table class="table">
+
+<thead>
+
+<tr>
+<th>Cloth Type</th>
+<th>Category</th>
+<th>City</th>
+<th>Quantity</th>
+<th>Status</th>
+<th>Volunteer</th>
+<th>Email</th>
+<th>Contact</th>
+<th>Collection Date</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr *ngFor="let d of data">
+
+<td>{{d.clothType}}</td>
+<td>{{d.category}}</td>
+<td>{{d.city}}</td>
+<td>{{d.quantity}}</td>
+
+<td>
+
+<span *ngIf="d.status=='Pending'" class="pending">
+Pending
+</span>
+
+<span *ngIf="d.status=='Accepted'" class="accepted">
+Accepted
+</span>
+
+<span *ngIf="d.status=='Rejected'" class="rejected">
+Rejected
+</span>
+
+</td>
+
+<td>
+{{d.volunteer || 'Not Assigned'}}
+</td>
+
+<td>
+{{d.volunteer_email || '-'}}
+</td>
+
+<td>
+{{d.volunteer_contact || '-'}}
+</td>
+
+<td>
+{{d.collectionDate || '-'}}
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>

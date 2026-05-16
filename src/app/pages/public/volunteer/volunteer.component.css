@@ -1,0 +1,67 @@
+.volunteer-hero {
+  text-align: center;
+  padding: 20px 20px;
+  background: linear-gradient(135deg, #ff6f61, #e85c50);
+  color: #fff;
+}
+
+.volunteer-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.volunteer-hero p {
+  font-size: 1.2rem;
+}
+
+.volunteer-list {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* light background for contrast */
+}
+
+.volunteer-list h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #fff;                 /* white text */
+  background-color: #ff6f61;   /* red bar */
+  padding: 15px 30px;
+  border-radius: 8px;
+  display: inline-block;       /* shrink to text width */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 20px;
+}
+
+.vol-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vol-card:hover {
+  transform: translateY(-5px);
+}
+
+.vol-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;          /* round profile look */
+  border: 3px solid #ff6f61;   /* red border for theme */
+}
+
+.vol-card h3 {
+  margin-top: 10px;
+  color: #444;
+  font-size: 1.1rem;
+}

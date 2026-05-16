@@ -1,0 +1,87 @@
+<div class="donation-wrapper">
+
+<div class="donation-card">
+
+<h2 class="title">Add Volunteer</h2>
+
+<form #frm="ngForm" (ngSubmit)="addVolunteer(frm.value,frm)">
+
+<div class="form-grid">
+
+<!-- State -->
+<div>
+<label>State</label>
+<input
+type="text"
+name="state"
+[(ngModel)]="state"
+readonly
+class="form-control">
+</div>
+
+<!-- City -->
+<div>
+<label>City</label>
+<input
+type="text"
+name="city"
+ngModel
+class="form-control"
+required>
+</div>
+
+<!-- Volunteer Name -->
+<div>
+<label>Volunteer Name</label>
+<input
+type="text"
+name="volunteer_name"
+ngModel
+class="form-control"
+required>
+</div>
+
+<!-- Contact -->
+<div>
+<label>Contact</label>
+<input
+type="text"
+name="contact"
+ngModel
+class="form-control"
+required>
+</div>
+
+<!-- Email -->
+<div class="full">
+<label>Email</label>
+<input
+type="email"
+name="email"
+ngModel
+class="form-control"
+required>
+</div>
+
+</div>
+
+<div class="btn-box">
+
+<div *ngIf="successMsg" class="success-msg">
+{{successMsg}}
+</div>
+
+<button type="submit" class="btn-submit">
+Add Volunteer
+</button>
+
+<button type="reset" class="btn-cancel">
+Cancel
+</button>
+<br><br>
+</div>
+</form>
+
+</div>
+
+</div>

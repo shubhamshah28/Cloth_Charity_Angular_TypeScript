@@ -1,0 +1,62 @@
+.donation-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.donation-card {
+    width: 700px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #4f7edb, #2bb673);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+.btn-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background: #2bb673;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.btn-cancel {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+}

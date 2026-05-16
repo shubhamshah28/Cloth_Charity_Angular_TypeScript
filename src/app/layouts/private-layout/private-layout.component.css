@@ -1,0 +1,101 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative; /* so toggle button can be positioned */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 190px;
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+.sidebar.hide {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Sidebar Links */
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.sidebar nav a:hover {
+  background: #2bb673;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #2bb673;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  z-index: 1000; /* stays above sidebar */
+}
+
+.toggle-btn:hover {
+  background: #24985d;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page Container */
+.content-wrapper {
+  flex: 1;
+  margin: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.dropdown {
+position: relative;
+display: block;
+}
+
+.dropdown-title{
+display:block;
+padding:10px;
+cursor:pointer;
+color:white;
+}
+
+.dropdown-content{
+display:none;
+flex-direction:column;
+padding-left:15px;
+}
+
+.dropdown-content a{
+display:block;
+padding:8px;
+color:white;
+text-decoration:none;
+}
+
+.dropdown:hover .dropdown-content{
+display:flex;
+}

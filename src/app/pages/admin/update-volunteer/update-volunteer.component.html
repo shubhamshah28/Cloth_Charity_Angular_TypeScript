@@ -1,0 +1,77 @@
+<div class="update-wrapper">
+
+<div class="update-card">
+
+<h2 class="title">Volunteer Update Form</h2>
+
+<form #volForm="ngForm" (ngSubmit)="volSubmit(volForm.value)">
+
+<div class="form-grid">
+
+<!-- State -->
+<div class="form-group">
+<label>State</label>
+<input 
+[(ngModel)]="data[0].state"
+name="state"
+class="form-control"
+readonly>
+</div>
+
+<!-- City -->
+<div class="form-group">
+<label>City</label>
+<input 
+[(ngModel)]="data[0].city"
+name="city"
+class="form-control">
+</div>
+
+<!-- Volunteer Name -->
+<div class="form-group">
+<label>Volunteer Name</label>
+<input 
+[(ngModel)]="data[0].volunteer_name"
+name="volunteer_name"
+class="form-control">
+</div>
+
+<!-- Contact -->
+<div class="form-group">
+<label>Contact</label>
+<input 
+[(ngModel)]="data[0].contact"
+name="contact"
+class="form-control">
+</div>
+
+<!-- Email -->
+<div class="form-group full">
+<label>Email</label>
+<input 
+[(ngModel)]="data[0].email"
+name="email"
+class="form-control">
+</div>
+
+</div>
+
+<div class="btn-box">
+
+<button type="submit" class="btn-submit">
+Submit
+</button>
+
+<button
+type="button"
+class="btn-cancel"
+routerLink="/manage_volunteer">
+Cancel
+</button>
+
+</div>
+
+</form>
+
+</div>
+</div>

@@ -1,0 +1,66 @@
+<div class="manage-users-wrapper">
+
+  <div class="container">
+
+    <div class="card custom-card">
+
+      <div class="card-header custom-header">
+        <h3>Donation Delivery</h3>
+      </div>
+
+      <div class="card-body table-responsive">
+
+        <table class="table custom-table">
+
+          <thead>
+            <tr>
+              <th>Donor Name</th>
+              <th>Cloth Type</th>
+              <th>Category</th>
+              <th>City</th>
+              <th>Quantity</th>
+              <th>Volunteer</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Collection Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr *ngFor="let d of data">
+
+              <td>{{d.username}}</td>
+              <td>{{d.clothType}}</td>
+              <td>{{d.category}}</td>
+              <td>{{d.city}}</td>
+              <td>{{d.quantity}}</td>
+              <td>{{d.volunteer}}</td>
+              <td>{{d.volunteer_email}}</td>
+              <td>{{d.volunteer_contact}}</td>
+              <td>{{d.collectionDate}}</td>
+
+              <td class="action-buttons">
+
+                <button
+                class="btn-update"
+                (click)="rowsearch(d._id)">
+                Deliver
+                </button>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

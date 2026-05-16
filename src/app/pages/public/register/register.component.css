@@ -1,0 +1,88 @@
+/* Hero Section */
+.register-hero {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #ff6f61, #e85c50);
+  color: #fff;
+}
+
+.register-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.register-hero p {
+  font-size: 1.3rem;
+}
+
+/* Register Form */
+.register-form {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.register-form form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-form h2 {
+  color: #ff6f61;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Inputs */
+.register-form input,
+.register-form select,
+.register-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  width: 90%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 6px rgba(255,111,97,0.4);
+  outline: none;
+}
+
+.register-form a{
+font-weight:600;
+margin-left:5px;
+}
+
+.register-form .text-center{
+text-align:center;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #ff6f61;
+  color: white;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background-color: #e85c50;
+}

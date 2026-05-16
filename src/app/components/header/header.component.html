@@ -1,0 +1,25 @@
+<header class="topbar">
+  <div class="logo">
+    <h1 *ngIf="role === 'public'">Cloth Charity</h1>
+
+    <h2 *ngIf="role === 'admin'">
+      <br>Welcome, {{ fullName }}
+    </h2>
+
+    <h2 *ngIf="role === 'user'">
+      <br>Welcome, {{ fullName }}
+    </h2>
+  </div>
+
+  <nav class="nav-links">
+    <ng-container *ngIf="role === 'public'">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/event" routerLinkActive="active">Event</a>
+      <a routerLink="/volunteer" routerLinkActive="active">Volunteer</a>
+      <a routerLink="/register" routerLinkActive="active">Register</a>
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </ng-container>
+  </nav>
+</header>
